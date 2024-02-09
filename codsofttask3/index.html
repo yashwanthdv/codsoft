@@ -1,390 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="display">
+        <input type="text" placeholder="0" id="input" disabled />
+      </div>
+      <div class="buttons">
+        <!-- Full Erase -->
+        <button value="AC" id="clear" class="operation-button" >AC</button>
+        <!-- Erase Single Value -->
+        <button value="DEL" id="erase" class="operation-button" >DEL</button>
+        <button value="/" class="operation-button button">/</button>
+        <button value="*" class="operation-button button" >*</button>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YASHWANTH D V</title>
-    <!--=================== Google Fonts ====================-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+        <button value="7" class="digit-button button" />7</button>
+        <button value="8" class="digit-button button" />8</button>
+        <button value="9" class="digit-button button" />9</button>
+        <button value="-" class="operation-button button" />-</button>
 
+        <button value="6" class="digit-button button" />6</button>
+        <button value="5" class="digit-button button" />5</button>
+        <button value="4" class="digit-button button" />4</button>
+        <button value="+" class="operation-button button" />+</button>
 
-    <!--=================== Remixicons ====================-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <button value="1" class="digit-button button" />1</button>
+        <button value="2" class="digit-button button" />2</button>
+        <button value="3" class="digit-button button" />3</button>
 
-    <!--=================== SwiperJS CSS ====================-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
-
-    <!--=================== Main CSS ====================-->
-    <link rel="stylesheet" href="assets/css/main.css">
-
-</head>
-
-<body>
-
-    <!--=================== Header ====================-->
-    <header id="header" class="header">
-        <div class="container">
-            <nav class="nav">
-                <a href="index.html" class="nav__brand">
-                    <i class=""></i>YASHWANTH<Span></Span>
-                </a>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#hero" class="nav__link">Home</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">About</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#qualification" class="nav__link">Qualification</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#service" class="nav__link">Services</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#project" class="nav__link">Projects</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact"  class="nav__link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__toggle">
-                    <i id="nav-toggle" class="ri-menu-3-line"></i>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--=================== main ====================-->
-    <main class="main">
-        <!--=================== Hero ====================-->
-        <section id="hero" class="hero">
-            <div class="container">
-                <div class="d-grid hero__wrapper">
-                    <div class="hero__content">
-                        <h1 class="hero__title">Hi, I am YASHWANTH D V,<br>Software Developer.</h1>
-                        <p class="hero__description">As a software developer, I specialize in creating innovative and efficient software solutions to meet the needs of business and users like.
-                        </p>
-                        <div class="hero__info">
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">Fresher</p>
-                                <h2 class="hero__info-title"><br>Experience</h2>
-                            </div>
-                            <div class="hero__info-wrapper">
-                                <p class="hero__info-number">4</p>
-                                <h2 class="hero__info-title">Projects<br>Completed</h2>
-                            </div>
-                            <!-- <div class="hero__info-wrapper">
-                                <p class="hero__info-number">03+</p>
-                                <h2 class="hero__info-title">Companies<br> Worked</h2>
-                            </div> -->
-                        </div>
-                    </div>
-                    <img src="assets/img/my.jpg" alt="Shawn" class="hero__img">
-                </div>
-            </div>
-        </section>
-
-        <!--=================== About ====================-->
-        <section id="about" class="section about">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">About Me</h2>
-                    <span class="section__subtitle">Who am I</span>
-                </div>
-                <div class="d-grid about__wrapper">
-                    <div class="about__content">
-                        <h3 class="about__title">I'm a Professional and Experienced Software Developer.</h3>
-                        <p class="about__description">I bring a passion for coding and a proven track record in creating innovative solutions. Iam dedicated to transform ideas into robust and scalable software applications.
-                            I love to stay up-to-date with the latest technology trends and imporiving my skills.
-                            I'm always eager to take new challenges and work with a team to deliver exceptional results.
-                        </p>
-                        <a href="#project" class="btn btn--primary">Know More</a>
-                    </div>
-                    <div class="skills">
-                        <h3 class="skills__title">Technologies I've been working with:</h3>
-                        <div class="skills__wrapper">
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Backend</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Python</li>
-                                    <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        PHP</li> -->
-                                    <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Node.js</li> -->
-                                    <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Firebase</li> -->
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Java</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        MySQL</li>
-                                </ul>
-                            </div>
-                            <div class="skills__content">
-                                <h4 class="skills__subtitle">Frontend</h4>
-                                <ul class="skills__list">
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        HTML</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        CSS</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        JavaScript</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        XML</li>
-                                    <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        php</li>
-                                    <!-- <li class="skills__item"><i class="ri-arrow-right-s-fill"></i>
-                                        Vue.js</li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--=================== Qualification ====================-->
-        <section id="qualification" class="section qualification">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Qualification</h2>
-                    <span class="section__subtitle">Experience & Education</span>
-                </div>
-                <!--============== Professional Experience ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-briefcase-fill"></i>
-                        Professional Experience
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Experience 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Intern at AiROBOSOFT PRODUCT AND PRIVATE LIMITED</h3>
-                            <p class="qualification__description">Worked as a intern for one month at AiROBOSOFT, Gained some extra knowledge about data science and AIML in python.
-                                completed my Smart attendance system project during the month of august 2023 as a intern. 
-                            </p>
-                            
-                            <span class="qualification__date">AUGUST-2023 TO SEPTEMBER-2023 </span>
-                        </div>
-                        <!-- Experience 2-->
-                        <!-- <div class="qualification__item">
-                            <h3 class="qualification__title">Full Stack Developer</h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur.
-                                Facilisi vitae bibendum praesent sodales
-                                urna vel molestie neque augue.</p>
-                            <span class="qualification__date">2022 - 2023</span>
-                        </div> -->
-                        <!-- Experience 3-->
-                        <!-- <div class="qualification__item">
-                            <h3 class="qualification__title">UI/UX Designer at Pinterest</h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur.
-                                Facilisi vitae bibendum praesent sodales
-                                urna vel molestie neque augue.</p>
-                            <span class="qualification__date">2017 - 2019</span>
-                        </div> -->
-                    </div>
-                </div>
-                <!--============== Education ============-->
-                <div class="qualification__wrapper">
-                    <h3 class="qualification__name">
-                        <i class="ri-booklet-fill"></i>
-                        Education
-                    </h3>
-                    <div class="d-grid qualification__content">
-                        <!-- Education 1-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Computer Science and engineering</h3>
-                            <p class="qualification__description">As a computer science student, I have a strong foundation in algorithms, data structures, software design and Development.
-                                My coursework has provided me with a deep understanding of the principles and practices of computer science,
-                                and I have honed my programming skills through various projects and assignments.
-                            </p>
-                            <p class="college_name">K N S INSTITUTE OF TECHNOLOGY</p>
-                        </p>
-                            <span class="qualification__date">2020 - 2024</span>
-                        </div>
-                        <!-- Education 2-->
-                        <div class="qualification__item">
-                            <h3 class="qualification__title">Pre University college</h3>
-                            <p class="qualification__description">Completed a comprehensive two-years of  my PUC in science (PCMB) and achieved a strong academic percentage of 86. Developed critical thinking, Problem solving, and time management skills.
-                            </p>
-                            <p class="college_name">Amara Jyothi PU College</p>
-                            <span class="qualification__date">2018 - 2020</span>
-                        </div>
-                        <!-- Education 3-->
-                        <!-- <div class="qualification__item">
-                            <h3 class="qualification__title">Software Engineer</h3>
-                            <p class="qualification__description">Lorem ipsum dolor sit amet consectetur.
-                                Facilisi vitae bibendum praesent sodales
-                                urna vel molestie neque augue.</p>
-                            <span class="qualification__date">2010 - 2014</span>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="qualification__footer">
-                    <p class="qualification__footer-text">See my full resume</p>
-                    <a href="./assets/YASHWANTH D V-RESUME.pdf.pdf" download class="btn btn--primary">Resume</a>
-                </div>
-            </div>
-        </section>
-
-        <!--=================== services ====================-->
-        <section id="service" class="section service">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Services</h2>
-                    <span class="section__subtitle">What I do</span>
-                </div>
-                <div class="d-grid service__wrapper">
-                    <!--========= service card 1 =========-->
-                    <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-layout-4-fill"></i>
-                        </div>
-                        <h3 class="service__title">Frontend<br>Development</h3>
-                        <a href="#" class="service__link">Know More</a>
-                    </div>
-                    <!--========= service card 2 =========-->
-                    <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-code-s-slash-line"></i>
-                        </div>
-                        <h3 class="service__title">Backend<br> Development</h3>
-                        <a href="#" class="service__link">Know More</a>
-                    </div>
-                    <!--========= service card 3 =========-->
-                    <!-- <div class="service__card">
-                        <div class="service__icon">
-                            <i class="ri-pen-nib-fill"></i>
-                        </div>
-                        <h3 class="service__title">UI/UX<br> Design</h3>
-                        <a href="#" class="service__link">Know More</a>
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-        <!--=================== Projects ====================-->
-        <section id="project" class="section project">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Projects</h2>
-                    <span class="section__subtitle">My recent work</span>
-                </div>
-                <div class="d-grid project__wrapper">
-                    <!--============== project 1 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/cms1.jpg" alt="DBMS" class="project__img">
-                        <h3 class="project__title">COLLEGE MANAGEMENT SYSTEM</h3>
-                        <p class="project__description">This project is to view the details of students regarding their personal information, academic details and to view teacher’s details.</p>
-                        <a href="#" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                    <!--============== project 2 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/bb2.jpg" alt="Mobile application " class="project__img">
-                        <h3 class="project__title">BLOOD BANK</h3>
-                        <p class="project__description">Blood bank using Android Studio involves developing a mobile application to manage blood donations, requests, and donor information .</p>
-                        <a href="#" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                    <!--============== project 3 =============-->
-                    <div class="project__content">
-                        <img src="assets/img/3d.jpg" alt="Computer graphics" class="project__img">
-                        <h3 class="project__title">3D CAR ANIMATION</h3>
-                        <p class="project__description">I have implemented this project to perform 3D operations like rotation, scaling, and translation of a car and also to view car in day and night mode .</p>
-                        <a href="#" class="project__link">View Project
-                            <i class="ri-arrow-right-line"></i></a>
-                    </div>
-                   
-                </div>
-            </div>
-        </section>
-
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--=================== Contact ====================-->
-        <section id="contact" class="section contact">
-            <div class="container">
-                <div class="d-grid contact__wrapper">
-                    <div class="contact__content">
-                        <h2 class="contact__title">Interested in working together? Let's talk</h2>
-                        <p class="contact__description">
-                            Ready to work together on your next software project. I'd love to hear from you! 
-                            Feel free to get in touch using the contact information below.
-                            Whether uou have a specific project in mind or just want to chat about your software development needs , I am here to help.
-                            I will respond to your message as quickly as possible and look forward to connecting with you soon.
-                        </p>
-                    </div>
-                    <div class="contact__btn">
-                        <a href="#contact" class="btn btn--secondary">Get in touch</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!--=================== footer ====================-->
-    <footer id="footer" class="footer">
-        <div class="container">
-            <div class="d-grid footer__wrapper">
-                <div class="footer__content">
-                    <h4 class="footer__title">Follow Me</h4>
-                    <ul class="footer__social-list">
-                        <li class="footer__social-item">
-                            <a href="https://wa.link/1biqhj" target="_blank" class="footer__social-link">
-                                <i class="ri-whatsapp-fill"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="https://www.instagram.com/invites/contact/?i=1pc557crb5e77&utm_content=ib0zk05" target="_blank" class="footer__social-link">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="http://www.linkedin.com/in/yashwanth-d-v" target="_blank" class="footer__social-link">
-                                <i class="ri-linkedin-fill"></i>
-                            </a>
-                        </li>
-                        <li class="footer__social-item">
-                            <a href="https://github.com/yashwanthdv" target="_blank" class="footer__social-link">
-                                <i class="ri-github-fill"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__content">
-                    <h4 class="footer__title">Email Me</h4>
-                    <a href="#" class="footer__contact">yashwanthdvreddy2002@gmail.com</a>
-                </div>
-                <div class="footer__content">
-                    <h4 class="footer__title">Call Me</h4>
-                    <a href="#" class="footer__contact">+91 9740313054</a>
-                </div>
-            </div>
-            <p class="footer__copyright">&copy; 2024 Yashwanth D V. All Rights Reserved</p>
-        </div>
-    </footer>
-
-    <!--=================== SwiperJS  ====================-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <!--=================== ScrollReveal ==================-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=================== Main JS ====================-->
-    <script src="assets/js/main.js"></script>
-</body>
-
+        <button value="=" id="equal" class="operation-button" />=</button>
+        <button value="0" class="digit-button button" id="zero" />0</button>
+        <button value="." class="digit-button button" />.</button>
+      </div>
+          <div class="main" >
+              <p class="brand">Developed by
+                  <a href="https://acecoder.org/" target="_blank">YASHWANTH D V</a> </p>
+          </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
-
